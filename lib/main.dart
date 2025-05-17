@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vurelo_test_app/src/commons/commons.dart';
 
 import 'src/app.dart';
 
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      title: 'Vurelo Authentication Demo',
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.system,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       home: const App(),
     );
   }
