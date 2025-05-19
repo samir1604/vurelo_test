@@ -11,7 +11,7 @@ void main() {
     DeviceOrientation.portraitDown,
   ]);
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
-  setupServiceLocator();
+  //setupServiceLocator();
   runApp(const MyApp());
 }
 

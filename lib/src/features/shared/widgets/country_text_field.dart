@@ -37,7 +37,7 @@ class CountryTextField extends StatelessWidget {
           onTap: () => _showCountryPicker(context),
           child: Container(
             width: 115,
-            height: 50,
+            height: 48,
             decoration: BoxDecoration(
               color: AppColors.surfaceLight,
               border: Border.all(color: AppColors.borderColor),
