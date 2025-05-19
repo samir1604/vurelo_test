@@ -18,7 +18,7 @@ class OnboardingAuth extends StatelessWidget {
               constraints: BoxConstraints(minHeight: constraints.maxHeight),
               child: IntrinsicHeight(
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.fromLTRB(10.0, 40.0, 10.0, 0.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
@@ -59,7 +59,7 @@ class OnboardingAuth extends StatelessWidget {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.transparent,
                           ),
-                          onPressed: () {},
+                          onPressed: () => context.go(NavigationRoutes.navigateToLogin),
                           child: Text(
                             AppStrings.onBoardingAuthLogin,
                             style: AppStyles.unfilledButtonText(

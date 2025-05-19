@@ -10,7 +10,6 @@ class Routers {
 
   GoRouter _routes() => GoRouter(
     initialLocation: RouterPath.onBoardingAuthPath,
-    //'/onBoardingAuth/register',
     routes: <RouteBase>[_onBoardingAuth()],
     //TODO: Change to false, on release
     debugLogDiagnostics: true,

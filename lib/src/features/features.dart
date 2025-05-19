@@ -14,7 +14,7 @@ export 'shared/abstracts/model.dart';
 export 'shared/abstracts/view_notifier.dart';
 
 //# ViewModels
-export 'authentication/register/view_model/country_view_model.dart';
+export 'authentication/view_model/country_view_model.dart';
 
 // # Models
-export 'authentication/register/models/country_model.dart';
+export 'authentication/models/country_model.dart';

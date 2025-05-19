@@ -1,4 +1,4 @@
-import '../../../features.dart';
+import '../../features.dart';
 
 class CountryModel extends Model {
   CountryModel({

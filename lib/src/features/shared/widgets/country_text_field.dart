@@ -3,7 +3,6 @@ import 'package:flag/flag_widget.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/flutter_multi_formatter.dart';
-import 'package:go_router/go_router.dart';
 
 import 'package:vurelo_test_app/src/commons/commons.dart';
 import 'package:vurelo_test_app/src/features/features.dart';
@@ -38,7 +37,7 @@ class CountryTextField extends StatelessWidget {
           onTap: () => _showCountryPicker(context),
           child: Container(
             width: 115,
-            height: 48,
+            height: 50,
             decoration: BoxDecoration(
               color: AppColors.surfaceLight,
               border: Border.all(color: AppColors.borderColor),
@@ -59,8 +58,8 @@ class CountryTextField extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
                 SizedBox(width: 5.0),
-                Text('+', style: TextStyle(fontSize: 16)),
-                Text(countryModel.phoneCode, style: TextStyle(fontSize: 16)),
+                Text('+', style: context.labelMedium),
+                Text(countryModel.phoneCode, style: context.labelMedium),
                 SizedBox(width: 10.0),
                 Icon(Icons.arrow_drop_down, color: Colors.grey),
               ],
@@ -72,6 +71,7 @@ class CountryTextField extends StatelessWidget {
             child: Form(
               key: form,
               child: TextFormField(
+                style: context.labelMedium?.copyWith(color: AppColors.onSecondaryColorLight),
                 autofocus: true,
                 controller: phoneController,
                 keyboardType: TextInputType.phone,

@@ -57,7 +57,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     effect: ExpandingDotsEffect(),
                   ),
                 ),
-                const SizedBox(height: 5.0),
+                const SizedBox(height: 10.0),
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
@@ -65,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     style: AppStyles.smallText(context.isSystemDarkMode),
                   ),
                 ),
-                const SizedBox(height: 5.0),
+                const SizedBox(height: 10.0),
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
@@ -73,7 +73,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     style: context.displayMedium,
                   ),
                 ),
-                const SizedBox(height: 20.0),
+                const SizedBox(height: 25.0),
                 ValueListenableBuilder(
                   valueListenable: _countryViewModel.listenable,
                   builder:
@@ -85,7 +85,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             (model) => _countryViewModel.setCountry(model),
                       ),
                 ),
-                const SizedBox(height: 8.0),
+                const SizedBox(height: 20.0),
                 SizedBox(
                   width: context.blockSizeHorizontal(90),
                   child: ElevatedButton(
@@ -102,7 +102,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: 15),
                 Row(
                   children: [
                     Expanded(
@@ -120,7 +120,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 8.0),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -128,22 +128,22 @@ class _RegisterPageState extends State<RegisterPage> {
                     Spacer(),
                     Expanded(
                       child: CircleButton(
-                        width: 46.0,
-                        height: 46.0,
+                        width: 50.0,
+                        height: 50.0,
                         icon: AppImages.iconEnvelope,
                         onPressed: () {},
                       ),
                     ),
                     CircleButton(
-                      width: 46.0,
-                      height: 46.0,
+                      width: 50.0,
+                      height: 50.0,
                       icon: AppImages.iconGoogle,
                       onPressed: () {},
                     ),
                     Expanded(
                       child: CircleButton(
-                        width: 46.0,
-                        height: 46.0,
+                        width: 50.0,
+                        height: 50.0,
                         icon: AppImages.iconApple,
                         onPressed: () {},
                       ),
@@ -151,7 +151,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     Spacer(),
                   ],
                 ),
-                const SizedBox(height: 8.0),
+                const SizedBox(height: 15.0),
                 RichText(
                   text: TextSpan(
                     style: TextStyle(fontSize: 14, height: 1.2),
