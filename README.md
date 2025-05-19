@@ -14,5 +14,3 @@ En estos momentos es la version estable del framework aunque se uso FVM.
 - Las pantallas implementdas fueron la de **Inicio**, y la de **Registro**. 
 
 También se implemento un icono de launcher para la app y la pantalla de Splash.
-
-En la raíz del proyecto se incluyo un apk en modo debug para instalar y no tener que correr el proyecto.
