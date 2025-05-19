@@ -1,16 +1,18 @@
 # vurelo_test_app
 
-Vurelo test project
+Vurelo Prueba Técnica
 
-## Getting Started
+## Empezemos
 
-This project is a starting point for a Flutter application.
+Este sistema ha sido construido utilizando **Flutter** en su versión **3.29.3**.
+En estos momentos es la version estable del framework aunque se uso FVM.
 
-A few resources to get you started if this is your first Flutter project:
+- Implementa el **diseño adaptable para modo claro y modo oscuro**, brindando una experiencia visual consistente en ambos entornos.
+- Para el **manejo de estado**, se utiliza **ValueNotifier**, lo cual permite una solución liviana y eficiente para esta prueba técnica.
+- El Widget **Country Text Field** tiene implementado mostrar la lista de paises con su codigo, al escoger un código de país automatico obtiene una mascarada de entrada dependiendo el código del país.
+- El validador tambien esta implementado, verificando que se tecleo un telefono valido.
+- Las pantallas implementdas fueron la de **Inicio**, y la de **Registro**. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+También se implemento un icono de launcher para la app y la pantalla de Splash.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+En la raíz del proyecto se incluyo un apk en modo debug para instalar y no tener que correr el proyecto.
