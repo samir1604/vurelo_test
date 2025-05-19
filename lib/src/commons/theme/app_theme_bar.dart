@@ -10,13 +10,11 @@ class AppThemeBar {
     centerTitle: false,
     scrolledUnderElevation: 0,
     backgroundColor: AppColors.surfaceLight,
-    foregroundColor: AppColors.onPrimaryColorLight,
-    iconTheme: IconThemeData(color: AppColors.onPrimaryColorLight),
-    actionsIconTheme: IconThemeData(color: AppColors.onPrimaryColorLight),
+    foregroundColor: AppColors.primaryColorLight,
     titleTextStyle: TextStyle(
-      fontSize: AppFonts.fontBodyMD,
+      fontSize: AppFonts.fontBodyMedium,
       fontWeight: FontWeight.w500,
-      color: AppColors.onPrimaryColorLight,
+      color: AppColors.primaryColorLight,
     ),
   );
 
@@ -26,10 +24,8 @@ class AppThemeBar {
     scrolledUnderElevation: 0,
     backgroundColor: AppColors.surfaceDark,
     foregroundColor: AppColors.onPrimaryColorLight,
-    iconTheme: IconThemeData(color: AppColors.onPrimaryColorLight),
-    actionsIconTheme: IconThemeData(color: AppColors.onPrimaryColorLight),
     titleTextStyle: TextStyle(
-      fontSize: AppFonts.fontBodyMD,
+      fontSize: AppFonts.fontBodyMedium,
       fontWeight: FontWeight.w500,
       color: AppColors.onPrimaryColorDark,
     ),

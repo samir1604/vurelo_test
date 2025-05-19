@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:vurelo_test_app/src/commons/commons.dart';
 import 'package:vurelo_test_app/src/core/core.dart';
-
-import 'src/app.dart';
+import 'package:vurelo_test_app/src/core/injection/service_location.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  setupServiceLocator();
   runApp(const MyApp());
 }
 

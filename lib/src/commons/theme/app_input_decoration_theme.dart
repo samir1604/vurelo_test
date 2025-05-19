@@ -5,18 +5,20 @@ import '../commons.dart';
 class AppInputDecorationTheme {
   AppInputDecorationTheme._();
 
+  static double defaultRadius = 24.0;
+
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
-    border: _createInputBorder(8.0, 1.0, AppColors.borderColor),
-    focusedBorder: _createInputBorder(8.0, 2.0, AppColors.primaryColorLight),
-    errorBorder: _createInputBorder(8.0, 1.0, AppColors.borderColorError),
+    border: _createInputBorder(defaultRadius, 1.0, AppColors.borderColor),
+    focusedBorder: _createInputBorder(defaultRadius, 1.0, AppColors.primaryColorLight),
+    errorBorder: _createInputBorder(defaultRadius, 1.0, AppColors.borderColorError),
     focusedErrorBorder: _createInputBorder(
-      8.0,
+      defaultRadius,
       2.0,
       AppColors.onAccentColorLight,
     ),
-    enabledBorder: _createInputBorder(8.0, 1.0, AppColors.borderColor),
+    enabledBorder: _createInputBorder(defaultRadius, 1.0, AppColors.borderColor),
     disabledBorder: _createInputBorder(
-      8.0,
+      defaultRadius,
       1.0,
       AppColors.borderColor.withValues(alpha: .5),
     ),
@@ -24,24 +26,25 @@ class AppInputDecorationTheme {
     fillColor: AppColors.surfaceLight,
     labelStyle: _createTextStyle(
       AppFonts.family,
-      AppFonts.fontBodySM,
+      AppFonts.fontBodySmall,
       fontWeight: FontWeight.w400,
       fontColor: AppColors.onSecondaryColorLight,
     ),
     floatingLabelStyle: _createTextStyle(
       AppFonts.family,
-      AppFonts.fontLabelXS,
+      AppFonts.fontLabelMedium,
       fontColor: AppColors.primaryColorLight,
     ),
     hintStyle: _createTextStyle(
       AppFonts.family,
-      AppFonts.fontBodySM,
+      AppFonts.fontBodySmall,
       fontColor: AppColors.midGrey,
     ),
     errorStyle: _createTextStyle(
       AppFonts.family,
-      AppFonts.fontLabelXS,
+      AppFonts.fontLabelMedium,
       fontColor: AppColors.onAccentColorLight,
+      fontWeight: FontWeight.w400,
     ),
     contentPadding: const EdgeInsets.symmetric(
       horizontal: 16.0,
@@ -52,17 +55,17 @@ class AppInputDecorationTheme {
   );
 
   static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
-    border: _createInputBorder(8.0, 1.0, AppColors.borderColor),
-    focusedBorder: _createInputBorder(8.0, 2.0, AppColors.primaryColorDark),
-    errorBorder: _createInputBorder(8.0, 1.0, AppColors.borderColorError),
+    border: _createInputBorder(defaultRadius, 1.0, AppColors.borderColor),
+    focusedBorder: _createInputBorder(defaultRadius, 2.0, AppColors.primaryColorDark),
+    errorBorder: _createInputBorder(defaultRadius, 1.0, AppColors.borderColorError),
     focusedErrorBorder: _createInputBorder(
-      8.0,
+      defaultRadius,
       2.0,
       AppColors.onAccentColorDark,
     ),
-    enabledBorder: _createInputBorder(8.0, 1.0, AppColors.borderColor),
+    enabledBorder: _createInputBorder(defaultRadius, 1.0, AppColors.borderColor),
     disabledBorder: _createInputBorder(
-      8.0,
+      defaultRadius,
       1.0,
       AppColors.borderColor.withValues(alpha: .5),
     ),
@@ -70,23 +73,23 @@ class AppInputDecorationTheme {
     fillColor: AppColors.surfaceDark,
     labelStyle: _createTextStyle(
       AppFonts.family,
-      AppFonts.fontBodySM,
+      AppFonts.fontBodySmall,
       fontWeight: FontWeight.w400,
       fontColor: AppColors.onSecondaryColorDark,
     ),
     floatingLabelStyle: _createTextStyle(
       AppFonts.family,
-      AppFonts.fontLabelXS,
+      AppFonts.fontLabelMedium,
       fontColor: AppColors.primaryColorDark,
     ),
     hintStyle: _createTextStyle(
       AppFonts.family,
-      AppFonts.fontBodySM,
+      AppFonts.fontBodySmall,
       fontColor: AppColors.midGrey,
     ),
     errorStyle: _createTextStyle(
       AppFonts.family,
-      AppFonts.fontLabelXS,
+      AppFonts.fontLabelMedium,
       fontColor: AppColors.onAccentColorDark,
     ),
     contentPadding: const EdgeInsets.symmetric(

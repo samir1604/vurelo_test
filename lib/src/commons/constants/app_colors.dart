@@ -7,11 +7,15 @@ class AppColors {
   static const Color surfaceLight = Color(0xFFF7F7F7);
   static const Color primaryColorLight = Color(0xFF2B39AE);
   static const Color onPrimaryColorLight = Color(0xFFFFFFFF);
-  static const Color onSecondaryColorLight = Color(0xFF121213);
+  static const Color onSecondaryColorLight = Color(0xFF181819);
   static const Color accentColorLight = Color(0xFFF8F1F5);
   static const Color onAccentColorLight = Color(0xFF9D0A0A);
   static const Color disabledColorLight = Color(0xFFA5ABDA);
   static const Color onDisabledColorLight = Color(0xFFFAFAFA);
+
+  static const Color textInputFilled = Color(0xFFF0F1FE);
+
+  static const Color veryDark = Color(0xFF0B0B0B);
 
   static const Color borderColor = Color(0xFFC3C9FC);
   static const Color borderColorError = Color(0xFFD45050);
@@ -25,6 +29,9 @@ class AppColors {
   static const Color onAccentColorDark = Color(0xFFD45050);
   static const Color disabledColorDark = Color(0xFF4E5383);
   static const Color onDisabledColorDark = Color(0xFF232324);
+
+
+  static const Color circleBorder = Color(0xFFD8DADC);
 
   static const Color black12 = Colors.black12;
   static const Color midGrey = Color(0xFFAAAAAA);

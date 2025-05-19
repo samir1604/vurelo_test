@@ -8,7 +8,7 @@ class AppElevatedButtonTheme {
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
           enabledMouseCursor: SystemMouseCursors.click,
-          shadowColor: AppColors.disabledColorLight,
+          shadowColor: Colors.transparent,
           side: BorderSide(color: AppColors.primaryColorLight),
           backgroundColor: WidgetStateColor.resolveWith((states) =>
           states.contains(WidgetState.disabled)
@@ -20,10 +20,10 @@ class AppElevatedButtonTheme {
               : AppColors.onPrimaryColorLight),
           elevation: 2.0,
           shape:
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+          RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
           padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
           textStyle: const TextStyle(
-              fontSize: AppFonts.fontBodySM, fontWeight: FontWeight.w600),
+              fontSize: AppFonts.fontBodySmall, fontWeight: FontWeight.w600, height: 1.2),
           overlayColor: WidgetStateColor.resolveWith(
                 (states) => states.contains(WidgetState.pressed)
                 ? AppColors.black12
@@ -48,7 +48,7 @@ class AppElevatedButtonTheme {
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
           padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
           textStyle: const TextStyle(
-              fontSize: AppFonts.fontBodySM, fontWeight: FontWeight.w600),
+              fontSize: AppFonts.fontBodySmall, fontWeight: FontWeight.w600),
           overlayColor: WidgetStateColor.resolveWith(
                 (states) => states.contains(WidgetState.pressed)
                 ? AppColors.black12
